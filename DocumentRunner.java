@@ -1,19 +1,19 @@
+/**
+ * @author Tao Chen
+ *
+ * The DocumentRunner can be ran from the commandline to find the most similar pairs of documents in a directory.
+ * Example command to run with brute force similarity search:
+ * 				java DocumentRunner -threshold 0.5 -method bf -maxFiles 100 -dir articles -shingleLength 5
+ * Example command to run with LSH similarity search:
+ * 				java DocumentRunner -threshold 0.5 -method lsh -maxFiles 100 -dir articles -shingleLength 5 -numHashes 100 -numBands 20
+ */
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 import java.util.Set;
-
-/**
- * The DocumentRunner can be ran from the commandline to find the most similar pairs of documents in a directory.
- * Example command to run with brute force similarity search:
- * 				java DocumentRunner -threshold 0.5 -method bf -maxFiles 100 -dir articles -shingleLength 5 
- * Example command to run with LSH similarity search:
- * 				java DocumentRunner -threshold 0.5 -method lsh -maxFiles 100 -dir articles -shingleLength 5 -numHashes 100 -numBands 20
- *
- * @author Toon Van Craenendonck
- */
 
 public class DocumentRunner {
 

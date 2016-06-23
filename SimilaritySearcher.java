@@ -1,14 +1,14 @@
+/**
+ * @author Tao Chen
+ *
+ * Searching similar objects. Objects should be represented as a mapping from an object identifier to a set containing the associated values.
+ */
+
 import java.util.HashSet;
 import java.util.Set;
 import java.util.Map;
 
 
-/**
- * Searching similar objects. Objects should be represented as a mapping from an object identifier to a set containing the associated values.
- * 
- * @author Toon Van Craenendonck
- *
- */
 public abstract class SimilaritySearcher {
 
 	Map<Integer,Set<Integer>> objectMapping;

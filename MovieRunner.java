@@ -1,3 +1,11 @@
+/**
+ * @author Tao Chen
+ *
+ * The MovieRunner can be ran from the commandline to perform minhash and LSH, and to afterwards predict user ratings.
+ * Example command to run with LSH:
+ * 			java MovieRunner -method lsh -numHashes 100 -numBands 20 -trainingFile ../r1.train -testFile ../r1.test -minRatingCount 3 -threshold 0.
+ */
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -5,13 +13,6 @@ import java.util.List;
 import java.util.Random;
 import java.util.Set;
 
-/**
- * The MovieRunner can be ran from the commandline to perform minhash and LSH, and to afterwards predict user ratings.
- * Example command to run with LSH:
- * 			java MovieRunner -method lsh -numHashes 100 -numBands 20 -trainingFile ../r1.train -testFile ../r1.test -minRatingCount 3 -threshold 0.1
- * 
- * @author Toon Van Craenendonck
- */
 
 public class MovieRunner {
 	

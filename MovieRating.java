@@ -1,8 +1,7 @@
 /**
- * Simple class to store movies together with their rating.
- * 
- * @author Toon Van Craenendonck
+ * @author Tao Chen
  *
+ * Simple class to store movies together with their rating.
  */
 public class MovieRating implements Comparable<MovieRating>{
 

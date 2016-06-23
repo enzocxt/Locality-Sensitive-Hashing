@@ -1,13 +1,13 @@
+/**
+ * @author Tao Chen
+ *
+ * Reads a directory of documents and constructs shingle representations for these documents.
+ */
+
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * Reads a directory of documents and constructs shingle representations for these documents.
- * 
- * @author Toon Van Craenendonck
- *
- */
 public class DocumentHandler {
 
 	Map<Integer, Set<Integer>> fileToShingle = new HashMap<Integer, Set<Integer>>(); // maps a fileID (which in this implementation simply corresponds to the filename)

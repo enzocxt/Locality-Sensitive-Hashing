@@ -1,3 +1,10 @@
+/**
+ * @author Tao Chen
+ *
+ * A SimpleShingler constructs the shingle representations of documents.
+ * It takes all substrings of length k of the document, and maps these substrings to an integer value that is inserted into the documents shingle set.
+ */
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -6,13 +13,7 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * A SimpleShingler constructs the shingle representations of documents.
- * It takes all substrings of length k of the document, and maps these substrings to an integer value that is inserted into the documents shingle set.
- * 
- * @author Toon Van Craenendonck
- *
- */
+
 public class SimpleShingler {
 	
 	Map<String, Integer> shingleMap = new HashMap<String, Integer>(); // maps the k-shingles to integers

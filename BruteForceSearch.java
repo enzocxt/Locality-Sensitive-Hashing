@@ -1,14 +1,15 @@
+/**
+ * @author Tao Chen
+ *
+ * Brute force implementation of the similarity searcher.
+ * The Jaccard similarity is computed for all pairs and the most similar ones are selected.
+ */
+
 import java.util.HashSet;
 import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Set;
 
-/**
- * Brute force implementation of the similarity searcher. The Jaccard similarity is computed for all pairs and the most similar ones are selected.
- * 
- * @author Toon Van Craenendonck
- *
- */
 public class BruteForceSearch extends SimilaritySearcher{
 
 	public BruteForceSearch(Map<Integer,Set<Integer>> objectMapping){

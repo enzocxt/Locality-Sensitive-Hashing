@@ -1,8 +1,7 @@
 /**
- * SimilarPair contains the ids of two objects and their similarity.
- * 
- * @author Toon Van Craenendonck
+ * @author Tao Chen
  *
+ * SimilarPair contains the ids of two objects and their similarity.
  */
 public class SimilarPair implements Comparable<SimilarPair>{
 	int id1;

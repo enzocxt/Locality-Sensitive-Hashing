@@ -1,8 +1,7 @@
 /**
- * Simple class introduced for convenience, a neighbor has an ID and a Jaccard similarity to a certain user.
- * 
- * @author Toon Van Craenendonck
+ * @author Tao Chen
  *
+ * Simple class introduced for convenience, a neighbor has an ID and a Jaccard similarity to a certain user.
  */
 public class Neighbor implements Comparable<Neighbor>{
 

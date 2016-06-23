@@ -1,3 +1,12 @@
+/**
+ * @author Tao Chen
+ *
+ * Implementation of minhash and locality sensitive hashing (lsh) to find similar objects.
+ *
+ * The LSH should first construct a signature matrix. Based on this, LSH is performed resulting in a mapping of band ids to hash tables (stored in bandToBuckets).
+ * From this bandsToBuckets mapping, the most similar items should then be retrieved.
+ */
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -7,16 +16,6 @@ import java.util.Map;
 import java.util.Random;
 import java.util.Set;
 
-
-/**
- * Implementation of minhash and locality sensitive hashing (lsh) to find similar objects.
- * 
- * The LSH should first construct a signature matrix. Based on this, LSH is performed resulting in a mapping of band ids to hash tables (stored in bandToBuckets).
- * From this bandsToBuckets mapping, the most similar items should then be retrieved.
- * 
- * @author Toon Van Craenendonck
- *
- */
 public class LSH extends SimilaritySearcher{
 	List<Map<String, Set<Integer>>> bandToBuckets;
 

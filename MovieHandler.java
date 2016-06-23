@@ -1,3 +1,18 @@
+/**
+ * @author Tao Chen
+ *
+ * The MovieHandler reads the MovieLens data and constructs several mappings:
+ * 		- usersToRatings: maps the true user ID to a list of movie ratings
+ *
+ * 		- userIDs: maps the internal user ID to the true user ID
+ * 		- movieIDs: maps the internal movie ID to the true movie ID
+ *
+ * 		- usersToSets: maps the internal user ID to a set containing the users' likes and dislikes
+ *
+ * The internal IDs are introduced to make sure that the IDs used to perform minhashing and LSH nicely go from 0 to num_users or num_movies.
+ * Also, creating this mapping here ensures that the produced signature matrix and LSH tables are equal for equal inputs.
+ */
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -9,21 +24,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-/**
- * The MovieHandler reads the MovieLens data and constructs several mappings:
- * 		- usersToRatings: maps the true user ID to a list of movie ratings
- * 
- * 		- userIDs: maps the internal user ID to the true user ID
- * 		- movieIDs: maps the internal movie ID to the true movie ID
- * 
- * 		- usersToSets: maps the internal user ID to a set containing the users' likes and dislikes
- * 
- * The internal IDs are introduced to make sure that the IDs used to perform minhashing and LSH nicely go from 0 to num_users or num_movies.
- * Also, creating this mapping here ensures that the produced signature matrix and LSH tables are equal for equal inputs.
- * 
- * @author Toon Van Craenendonck
- *
- */
 public class MovieHandler{
 
 	String ratingFile;
